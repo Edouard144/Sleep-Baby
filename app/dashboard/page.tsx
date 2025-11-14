@@ -17,10 +17,10 @@ export default async function DashboardPage() {
         <div className="flex justify-between items-center mb-12">
           <div>
             <h1 className="text-4xl font-bold text-[#5555FF] mb-2">Welcome to SleepBaby</h1>
-            <p className="text-gray-600">Hello, {data.user.email}! 👋</p>
+            <p className="text-gray-600">Hello, {data.user.email}! </p>
           </div>
           <Link href="/api/auth/logout">
-            <Button className="bg-red-500 hover:bg-red-600 text-white">Logout</Button>
+            <Button className="bg--500 hover:bg-red-600 text-white">Logout</Button>
           </Link>
         </div>
 

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "SleepBaby - Better Sleep for Your Little One",
   description:
     "Track, understand, and improve your baby's sleep patterns with personalized insights and guidance from sleep experts.",
-  generator: "v0.app",
+  
   icons: {
     icon: [
       {

@@ -15,15 +15,22 @@ export default async function TrackingPage() {
   }
 
   return (
-    <div className="container mx-auto py-8">
-      <div className="flex justify-between items-center mb-8">
-        <h1 className="text-3xl font-bold text-[#5555FF]">Baby Activity Tracker</h1>
-        <ActivityForm>
-          <Button className="bg-[#5555FF] hover:bg-[#4444DD] text-white">
-            <Plus className="mr-2 h-4 w-4" /> Log Activity
-          </Button>
-        </ActivityForm>
+    <div className="min-h-screen bg-gray-50">
+      {/* Sticky Navigation Bar */}
+      <div className="sticky top-0 z-10 bg-white border-b border-gray-200 px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16">
+          <h1 className="text-xl font-semibold text-[#5555FF]">Baby Activity Tracker</h1>
+          <ActivityForm>
+            <Button size="sm" className="bg-[#5555FF] hover:bg-[#4444DD] text-white">
+              <Plus className="h-4 w-4 mr-1.5" />
+              <span className="hidden sm:inline">Log Activity</span>
+            </Button>
+          </ActivityForm>
+        </div>
       </div>
+
+      {/* Main Content */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
 
       <Tabs defaultValue="today" className="w-full">
         <TabsList className="grid w-full grid-cols-4 mb-6">
@@ -46,6 +53,7 @@ export default async function TrackingPage() {
           <ActivityList type="diaper" />
         </TabsContent>
       </Tabs>
+      </div>
     </div>
   )
 }
