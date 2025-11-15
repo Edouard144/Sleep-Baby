@@ -20,7 +20,7 @@ export default async function DashboardPage() {
             <p className="text-gray-600">Hello, {data.user.email}! </p>
           </div>
           <Link href="/api/auth/logout">
-            <Button className="bg--500 hover:bg-red-600 text-white">Logout</Button>
+            <Button className="bg-red-500 hover:bg-red-600 text-white">Logout</Button>
           </Link>
         </div>
 
@@ -74,7 +74,7 @@ export default async function DashboardPage() {
             <div className="w-12 h-12 bg-[#5555FF]/10 rounded-lg flex items-center justify-center mb-4">
               <span className="text-2xl">📈</span>
             </div>
-            <h3 className="text-xl font-bold text-[#5555FF] mb-3">Analytics</h3>
+            <h3 className="text-xl font-bold text-[#5555FF] mb-3">Analytics!</h3>
             <p className="text-gray-600 mb-4">View detailed insights and trends to understand your baby's sleep.</p>
             <Button className="w-full bg-[#5555FF] hover:bg-[#4444DD] text-white">View Analytics</Button>
           </div>
